@@ -19,7 +19,7 @@ SELECT
     WHEN 93 THEN 'FR-PAC'
     WHEN 94 THEN 'FR-20R'
   END AS iso_code,
-  SUM("incid_rea") AS total_incidents
+  SUM("incid_dchosp") AS total_incidents
 FROM "covid_france_full"
 WHERE "reg" is not NULL
 GROUP BY "reg"
